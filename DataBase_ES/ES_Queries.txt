@@ -1,0 +1,78 @@
+
+
+Create index user
+
+
+Create index_type user/userAllData
+
+{
+  "userAllData":{
+    "properties":{
+      "userName":{"type":"string"},
+      "password":{"type":"string"},
+      "fullName":{"type":"string","index":"analyzed"},
+      "eMail":{"type":"string"},
+      "mobileNumber":{"type":"string"},
+      "DOJ":{"type":"date"},
+      "DOB":{"type":"date"},
+      "address":{"type":"string"},
+      "city":{"type":"string"},
+      "state":{"type":"string"},
+      "securityQuestion" : {"type":"integer"},
+      "answer":{"type":"string"},
+      "currentOrder":{
+        "properties":{
+          "orderNum":{"type":"string"},
+          "orderDescription":{"type":"string"},
+          "orderDate":{"type":"date"}
+        }		
+      }
+    }
+  }
+}
+
+
+Inserting data into user InsexType
+
+{  
+      "userName":"ajitprak",
+      "password":"subhashini",
+      "fullName":"Ajith Prakash T",
+      "eMail":"ajiprak@gmail.com",
+      "mobileNumber":"9008617577",
+      "DOJ":"2015-08-04T00:38:00",
+      "DOB":"1987-05-31T00:00:00",
+      "address":"8,Main Road, Villukury, 629180",
+      "city":"Nagercoil",
+      "state":"Tamil Nadu",
+      "securityQuestion" : 1,
+      "answer":"Ranger",
+      "currentOrder":[
+           {
+              "orderNum":"ORD000001",
+              "orderDescription":"Moto G second Gen",
+              "orderDate":"2015-08-04T00:38:00"
+	    }
+        ]		
+}
+
+Validating User Name and password
+
+
+{
+  "query":{
+      "filtered":{
+      	"filter":{
+        	"and":[
+            	{
+                  "term":{"userName":"ajitprak"}
+                },
+                {
+                  "term":{"password":"shalini"}
+                }
+            ]
+        }
+      }
+  }
+}
+

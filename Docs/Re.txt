@@ -1,0 +1,18 @@
+1. Photos for all objects
+2. Website Basic structure/Security
+3. Courier/Deal
+4. Storage gooddown .... Categorisation
+5. Investment Amount
+6. Customer care for telling courier tracking details, problem solving.
+7. Deal with bank for payment.
+
+
+
+
+——————————————————————————————————————————
+Value Adds
+——————————-
+	Can give offer on special days
+	Can give some small items free on costly-purchase/multiple-purchase; free items can be chosen from few options.
+	Way to get to know the current whereabouts of the courier; Most importantly whether it has reached the user; Proof that it has reached user.
+	Business Point : Item remains in the DB even after out-of-stock; coz the star rating will be retained. Status to be moved to In-stock when updated in the inventory.
