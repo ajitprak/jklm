@@ -1,3 +1,4 @@
+//Decrepted Check once and delete as on 20th Sept 
 var assert = require('assert');
 var loginApiManager = require('../server/ApiManager/loginApiManager.js');
 var sinon = require('sinon');
@@ -12,7 +13,7 @@ res.send = function(result){
 };
 
 describe('Check Login ApiManager',function(){
-    it('Should call the Login API Managers handler',function(){
+    it.skip('Should call the Login API Managers handler',function(){
         var functionCalSpy = sinon.spy();
         loginApiManager.handler(queryMock.query,{"mockFielf1":"mockFielf1","mockFielf2":"mockFielf2"},req,res);//req,res,next
         //Testing whether the login.handler function is called
