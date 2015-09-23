@@ -10,26 +10,25 @@ User.authenticate = function (username,password,done){
     queryUtil.addParamsToQuery(query,params);
     var esCall = iServiceES.executeQuery(query);
     var onSuccess = function(response){
-        done(null,response);
+        if(response.hits.hits.length <= 0){
+             done(null,null);
+        }
+        else done(null,response);
     };
-    var onFailure = function(error){
-        if(error){
-            done(null,null);
-        }
-        else {
+    var onFailure = function(error){     
             done(error);
-        }
     };
     esCall.then(onSuccess,onFailure);
 };
 
 User.serialize = function(user,done){
-    appConstants.users[user.id] = user; //Remove after redis implementation
-    done(null,user.id);
+    var actualData = user.hits.hits[0]._source;
+    appConstants.users[actualData.userName] = actualData; //Remove after redis implementation
+    done(null,actualData.userName);
 };
 
 User.deserialize = function(id,done){
-    done(null,appConstants.users[user.id]);//Remove after redis implementation
+    done(null,appConstants.users[id]);//Remove after redis implementation
 };
 
 module.exports = User;
