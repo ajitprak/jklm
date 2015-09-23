@@ -1,7 +1,7 @@
 var queryDefinition = {};
 
 queryDefinition.login = {
-    'apiPath':'/api/login',
+    'apiPath':'/api/loginuser',
     'operation': 'POST',
     'esOperation' : 'search',
     parameters:{
