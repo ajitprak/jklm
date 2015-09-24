@@ -35,7 +35,7 @@ passport.serializeUser(User.serialize);
 passport.deserializeUser(User.deserialize);
 
 require('./Routes/entityRouteRegistory.js')(app);
-//require('./Routes/authRouteRegistory.js')(app);
+require('./Routes/authRouteRegistory.js')(app);
 
 app.get('/',function(req,res){
     res.writeHead(200,{'Content-Type' : 'text/html'});
@@ -45,13 +45,6 @@ app.get('/',function(req,res){
 app.get('/secureContent',function(req,res){
     res.writeHead(200,{'Content-Type' : 'text/html'});
     res.end('Some secured content');
-});
-//app.post('/login',function(req,res,next){
-//    console.log("Login");
-//    res.redirect('/home.html');
-//});
-app.post('/login',passport.authenticate('local'),function(req,res){
-    res.redirect('/home.html');
 });
 
 //var homeHandler = ;

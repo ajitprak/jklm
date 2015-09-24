@@ -11,7 +11,7 @@ User.authenticate = function (username,password,done){
     var esCall = iServiceES.executeQuery(query);
     var onSuccess = function(response){
         if(response.hits.hits.length <= 0){
-             done(null,null);
+             done(null,false);
         }
         else done(null,response);
     };
