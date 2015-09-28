@@ -4,14 +4,25 @@
 */
 
 .bannerContainer{
-    width: 75%;
+    width: 85%;
     height: 100px;
     margin-left: auto; 
     margin-right: auto; 
     text-align: center;
-    border: 2px,Solid,#000;
+    background-color: #F7BE81;
+    background: -webkit-radial-gradient(#FF8000, #F7BE81); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#FF8000, #F7BE81); /* For Opera 11.1 to 12.0 */
+    background: -moz-radial-gradient(#FF8000, #F7BE81); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#FF8000, #F7BE81); /* Standard syntax (must be last) */
 }
 .pageContainer{
     position:absolute;
-    width: 100%
+    width: 100%;
+}
+.title{
+    font-weight: bolder;
+}
+.content{
+    color: #2A1B0A;
+    font-weight: bold;
 }
