@@ -14,6 +14,7 @@ var User = require('./server/Auth/User.js')
 //initializing dependencies for session
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(express.static(path.join(__dirname,'/views')));
+app.use(express.static(path.join(__dirname,'/public')));
 app.use(restAuthorization);
 app.use(cookieParser());
 app.use(expressSession({

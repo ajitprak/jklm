@@ -3,4 +3,15 @@
     Author     : ajitprak
 */
 
-
+.bannerContainer{
+    width: 75%;
+    height: 100px;
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+    border: 2px,Solid,#000;
+}
+.pageContainer{
+    position:absolute;
+    width: 100%
+}
