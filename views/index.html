@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap.css"/>
+        <script type="text/javascript" src="lib/angular.min.js"></script>
     </head>
     <body>
         <div class="pageContainer">
@@ -12,12 +14,17 @@
                 <div class="title">The Patriot</div>
                 Be Indian Buy Indian
             </div>
-            <div>
-                <form action="/login" method="POST">
-                    <input type="text" name="username" placeholder="User Name" />
-                    <input type="password" name="password" placeholder="Password" />
-                    <input type="submit" name="LogIn" />
-                </form>
+            <div class="loginWrapper">
+                <div class="loginContainer"> <!--form-group-->
+                    <form action="/login" method="POST">
+                        <label class="title">Enter Your Credentials to sign-in</label><br/>
+                        <input class="form-control" type="text" name="username" placeholder="User Name" /><br/>
+                        <input class="form-control" type="password" name="password" placeholder="Password" /><br/>
+                        <input class="form-control btn-success" type="submit" name="LogIn" />
+                    </form><br/>
+                    <a href="/register" >Click to Register</a>
+                    <a href="/forgotpassword" class="pull-right">Forgot Password</a>
+                </div>
             </div>
         </div>
     </body>

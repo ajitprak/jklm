@@ -6,7 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>Welcome to the home page</div>
-        <div><a href="/logout">Click to Logout</a></div>
+        <script ng-include="appHeader.html"></script> <!--use directives initiate angular module -->
+        <div ng-include="leftPane.html"></div>
+        <div ng-include="appContent.html">
+            <div>Welcome to the home page</div>
+            <div><a href="/logout">Click to Logout</a></div>
+        </div>
+        <div ng-include="appFooter.html"></div>
     </body>
 </html>

@@ -4,10 +4,11 @@
 */
 
 .bannerContainer{
-    width: 85%;
+    width: 1400px;
     height: 100px;
     margin-left: auto; 
     margin-right: auto; 
+    margin-top: 10px;
     text-align: center;
     background-color: #F7BE81;
     background: -webkit-radial-gradient(#FF8000, #F7BE81); /* For Safari 5.1 to 6.0 */
@@ -25,4 +26,10 @@
 .content{
     color: #2A1B0A;
     font-weight: bold;
+}
+.loginContainer{
+    width: 300px;
+    top:150px;
+    left: 1100px;
+    position: absolute;
 }
