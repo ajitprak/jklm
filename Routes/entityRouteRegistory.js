@@ -27,7 +27,7 @@ module.exports = function(app){
         _.each(entityApis,function(entityApiAll){
             _.each(entityApiAll,function(entityApi){
                 if(entityApi.operation == 'POST'){
-                    console.log("API Path "+entityApi.apiPath);
+                    //console.log("API Path "+entityApi.apiPath);
                     app.post.apply(app,[entityApi.apiPath,commonHandler]);
                 }
     //        else if(entityApi.operation == 'GET'){
