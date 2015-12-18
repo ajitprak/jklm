@@ -9,6 +9,6 @@ login.loginHandler = function(req,res,next){
 
 login.logoutHandler = function(req,res,next){
     req.logout();
-    res.redirect('/index.html')
+    res.redirect('/index.html');
 };
 module.exports = login;

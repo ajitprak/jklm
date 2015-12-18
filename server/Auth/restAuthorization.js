@@ -1,4 +1,5 @@
 var hawk = require('hawk');
+var authenticationChecker = require('./checkAuthentication.js');
 
 var credentialsFunction = function (id,callback){
     var credentials = {
@@ -36,7 +37,7 @@ var restAuthorization = function(req,res,next){
             }
         });
     }
-    else next(); //Need to check for user authenticity
+    else authenticationChecker(req,res,next);// Checks for user Authenticity
 };
 
 module.exports = restAuthorization;
