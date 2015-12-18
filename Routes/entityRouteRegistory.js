@@ -5,7 +5,7 @@ var entityApis = {};
 var apiManagers = {};
 var entityApiFiles = fs.readdirSync('./server/EntityApi');
 _.each(entityApiFiles,function(entityApiFileName){
-    var apiName = entityApiFileName.substring(0,entityApiFileName.indexOf('.'));
+    var apiName = entityApiFileName.substring(0,entityApiFileName.indexOf('Api'));
     entityApis[apiName] = require('../server/EntityApi/'+entityApiFileName);
 });
 
@@ -20,7 +20,7 @@ module.exports = function(app){
     var commonHandler = function(req,res){
             var params = req.query;
             var operation = req.query.operation;
-            var queryObject = entityApis[req.query.entity+'Api'][operation];
+            var queryObject = entityApis[req.query.entity][operation];
             apiManagers[req.query.entity].handler(queryObject,params,req,res);
             //each handler must be a promise and it must be returned here with the data from db and in the then we write the logic to communicate with the client 
         };

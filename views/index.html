@@ -9,13 +9,28 @@
         <script type="text/javascript" src="lib/angular.min.js"></script>
     </head>
     <body>
-        <div class="pageContainer">
+        <!--<div class="pageContainer">
             <div class="bannerContainer content">
                 <div class="title">The Patriot</div>
                 Be Indian Buy Indian
             </div>
             <div class="loginWrapper">
-                <div class="loginContainer"> <!--form-group-->
+                <div class="loginContainer">
+                    <form action="/login" method="POST">
+                        <label class="title">Enter Your Credentials to sign-in</label><br/>
+                        <input class="form-control" type="text" name="username" placeholder="User Name" /><br/>
+                        <input class="form-control" type="password" name="password" placeholder="Password" /><br/>
+                        <input class="form-control btn-success" type="submit" name="LogIn" />
+                    </form><br/>
+                    <a href="/register" >Click to Register</a>
+                    <a href="/forgotpassword" class="pull-right">Forgot Password</a>
+                </div>
+            </div>
+        </div>-->
+        <div class="container">
+            <div class="row">
+				<div class="col-lg-8 hidden-sm">&nbsp;123</div>
+                <div class="col-lg-4 col-sm-12 pull-right">
                     <form action="/login" method="POST">
                         <label class="title">Enter Your Credentials to sign-in</label><br/>
                         <input class="form-control" type="text" name="username" placeholder="User Name" /><br/>

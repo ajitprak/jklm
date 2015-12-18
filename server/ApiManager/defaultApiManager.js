@@ -8,7 +8,8 @@ defaultApiManager.handler = function(queryObj,response){
         response.send(responseData);
     };
     var onFailure = function(error){
-        errorLog.error(error); 
+        errorLog.error(error);
+        response.send(error);
     };
     var esPromise = iServiceES.executeQuery(queryObj);
     esPromise.then(onSuccess,onFailure);

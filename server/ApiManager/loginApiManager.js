@@ -1,3 +1,4 @@
+//NOT USING AS LOGIN EVENTS ARE HANDLED IN THE AUTH MODULE
 var util = require('util');
 var defaultApiManager = require('./defaultApiManager.js');
 var queryUtil = require('../customUtils/queryUtil.js');
