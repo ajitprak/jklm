@@ -4,6 +4,7 @@ var queryUtil = require('../customUtils/queryUtil.js');
 var iServiceES = require('../iService/iServiceES.js');
 var appConstants = require('../customUtils/appConstants.js'); //Remove after redis implementation
 var _ = require('lodash');
+var logger = require('../logHandle/errorLogHandle.js');
 
 User.authenticate = function (username,password,done){
     var query = _.cloneDeep(entityApi.login); // '_' is lodash here
@@ -16,8 +17,9 @@ User.authenticate = function (username,password,done){
         }
         else done(null,response);
     };
-    var onFailure = function(error){     
-            done(error);
+    var onFailure = function(error){
+            logger.error("DB Connectivity error :"+error.message);
+            done("DB Connectivity error :"+error.message); // Change message for production
     };
     esCall.then(onSuccess,onFailure);
 };
