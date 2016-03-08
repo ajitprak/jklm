@@ -5,6 +5,7 @@ var iServiceES = require('../iService/iServiceES.js');
 var appConstants = require('../customUtils/appConstants.js'); //Remove after redis implementation
 var _ = require('lodash');
 var logger = require('../logHandle/errorLogHandle.js');
+var mail = require('../Mail/mailSender.js');
 
 User.authenticate = function (username,password,done){
     var query = _.cloneDeep(entityApi.login); // '_' is lodash here
@@ -20,6 +21,7 @@ User.authenticate = function (username,password,done){
     var onFailure = function(error){
             logger.error("DB error :"+error.message); //Can be a table not found error - Need to check
             done("DB error :"+error.message); // Change message for production
+            mail.send("DB error :"+error.message); //Uncomment here to send mail on error
     };
     esCall.then(onSuccess,onFailure);
 };
