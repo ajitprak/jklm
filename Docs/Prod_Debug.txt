@@ -1,0 +1,4 @@
+sudo bunyan -p '*' > tempLogger.log
+
+Run this and all of bunyan's logging levels will be activated and written to tempLogger.log, regardsless of the level mentioned in config
+Use PID instead of * to get logs from exactly which process you are expecting and not from all node processes
