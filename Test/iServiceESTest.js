@@ -8,7 +8,7 @@ var iServiceES = require('../server/iService/iServiceES.js');
 describe('iServiceES Test',function(){
     it('Is iService.executeQuery returning a promise',function(){
         var returnVal = iServiceES.executeQuery({esOperation:'search',parameters:{}});
-        //console.log(typeof returnVal == 'object');
-        expect(returnVal).to.be.a('promise');
+        expect(returnVal.then).to.exist;
+        expect(returnVal.then).to.be.a('function');      
     });
 });

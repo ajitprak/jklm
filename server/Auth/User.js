@@ -27,7 +27,7 @@ User.authenticate = function (username,password,done){
     var onFailure = function(error){
             logger.error("DB error :"+error.message);
             done("DB error :"+error.message);
-            /* mail.send("DB error :"+error.message);/*Uncomment here to send mail on error*/
+            /*mail.send("DB error :"+error.message);/*Uncomment here to send mail on error*/
     };
     esCall.then(onSuccess,onFailure);
 };

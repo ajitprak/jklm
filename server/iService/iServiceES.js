@@ -7,7 +7,6 @@ var esClient = new elasticsearch.Client({
 });
 
 var executeQuery = function(queryObj){
-    console.log(esClient);
     var promise = esClient[queryObj.esOperation](queryObj.parameters);
     return promise;
 };
