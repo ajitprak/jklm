@@ -4,7 +4,7 @@
   "description": "\"Online Products from Sarojini\"",
   "main": "app.js",
   "scripts": {
-    "test": "mocha && mocha --require blanket --reporter html-cov > testCoverage.html",
+    "test": "mocha && mocha --require blanket -R html-cov > TestCoverage.html",
     "start": "node app"
   },
   "author": "Ajith Prakash",
@@ -13,7 +13,7 @@
     "body-parser": "^1.14.0",
     "bunyan": "^1.4.0",
     "cookie-parser": "^1.4.0",
-    "elasticsearch": "^8.2.0",
+    "elasticsearch": "^10.1.3",
     "express": "^4.12.4",
     "express-session": "^1.11.3",
     "hawk": "^3.1.0",
@@ -27,7 +27,7 @@
     "xoauth2": "^1.1.0"
   },
   "devDependencies": {
-    "blanket": "^1.2.2",
+    "blanket": "git://github.com/alex-seville/blanket.git",
     "chai": "^3.2.0",
     "mocha": "^2.2.5",
     "sinon": "^1.16.1",
@@ -35,8 +35,8 @@
   },
   "config": {
     "blanket": {
-      "pattern": "app.js"
-    },
-    "data-cover-never": ["node_modules","Test"]
+      "pattern": [""],
+      "data-cover-never": ["node_modules","Test","public","TestingUtils"]
+    }
   }
 }
