@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.14.0",
-    "bunyan": "^1.4.0",
+    "bunyan": "^1.8.0",
     "cookie-parser": "^1.4.0",
     "elasticsearch": "^10.1.3",
     "express": "^4.12.4",
@@ -29,14 +29,24 @@
   "devDependencies": {
     "blanket": "git://github.com/alex-seville/blanket.git",
     "chai": "^3.2.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-simple-mocha": "^0.4.1",
     "mocha": "^2.2.5",
     "sinon": "^1.16.1",
     "sinon-chai": "^2.8.0"
   },
   "config": {
     "blanket": {
-      "pattern": [""],
-      "data-cover-never": ["node_modules","Test","public","TestingUtils"]
+      "pattern": [
+        ""
+      ],
+      "data-cover-never": [
+        "node_modules",
+        "Test",
+        "public",
+        "TestingUtils"
+      ]
     }
   }
 }

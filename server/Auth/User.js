@@ -12,7 +12,6 @@ User.authenticate = function (username,password,done){
     var params = {userName:username,password:password};
     queryUtil.addParamsToQuery(query,params);
     var esCall = iServiceES.executeQuery(query);
-
     var queryForLog = (typeof query == 'object')?JSON.stringify(query):query;
     logger.debug("ES Query : "+queryForLog);
 
