@@ -4,8 +4,11 @@ var errorLog = require('../logHandle/errorLogHandle.js');
 var defaultApiManager = {};
 
 defaultApiManager.handler = function(queryObj,response){
+    var queryForLog = (typeof queryObj == 'object')?JSON.stringify(queryObj):queryObj;
+    errorLog.debug("ES Query : "+queryForLog);
     var onSuccess = function(responseData){
         response.send(responseData);
+        errorLog.debug("Response from ES :"+responseData);
     };
     var onFailure = function(error){
         errorLog.error(error);
