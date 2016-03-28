@@ -19,8 +19,10 @@ module.exports = function(grunt){
                     '-W034': true
                 }
             },
-            files: ['gruntfile.js', 'server/*.js','app.jsß','Test/*.js','Routes/*.js','public/js/*.js'],
+            files: ['gruntfile.js', 'server/*.js','app.js','Test/*.js','Routes/*.js','public/js/*.js'],
             options: {
+                reporter:'./server/Grunt/htmlReporter.js',
+                reporterOutput:'staticAnalysis.html',
                 maxlen: 80,
                 quotmark: 'single'
             }
