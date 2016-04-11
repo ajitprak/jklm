@@ -5,8 +5,9 @@
 require.config({
     
     paths:{
-        angular:'./lib/angular.min',
-        uiRouter:'./lib/angular-ui-router.min'
+        'domReady': '../lib/requirejs-domready/domReady',
+        'angular':'../lib/angular',
+        'uiRouter':'../lib/angular-ui-router.min'
         //bootstrap:'lib/bootstrap.css'
     },
     shim: {
@@ -16,11 +17,6 @@ require.config({
         'uiRouter':{
             deps:['angular']
         }
-    }
+    },
+    deps: ['./bootstrap']
 });
-
-require(['app'],//'domReady!',
-        function () {
-            angular.bootstrap(document,['app']);
-        }
-);
