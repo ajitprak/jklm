@@ -7,7 +7,7 @@ require(['./app'],function(app){
                 name: 'home',
                 info :{
                     url:'/home',
-                    templateUrl : 'public/partial-home.html',
+                    templateUrl : 'partial-home.html',
                     controller : 'HomeController'
                 }
             }
