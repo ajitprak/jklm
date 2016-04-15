@@ -4,13 +4,15 @@
         <title>The Patriot Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script-->
         <link rel="stylesheet" type="text/css" href="css/common.css"/>
-        <link rel="stylesheet" type="text/css" href="lib/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css"/>
          <script data-main="./js/main" src="./lib/require.js"></script>
     </head>
     <body>
-        <script ng-include="appHeader.html"></script> <!--use directives initiate angular module -->
-        <nav class="navbar navbar-inverse" role="navigation">
+        <div ng-include="'appHeader.html'"></div> <!--use directives initiate angular module -->
+        <!--nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
                 <a class="navbar-brand" ui-sref="#">Patriot</a>
             </div>
@@ -18,7 +20,7 @@
                 <li><a ui-sref="home">Home</a></li>
                 <li><a ui-sref="about">About</a></li>
             </ul>
-        </nav>
+        </nav-->
         <div ng-include="leftPane.html"></div>
         <div ui-view></div>
         <div ng-include="appFooter.html"></div>

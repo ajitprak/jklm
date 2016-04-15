@@ -4,12 +4,9 @@
 */
 
 .bannerContainer{
-    width: 1400px;
-    height: 100px;
     margin-left: auto; 
     margin-right: auto; 
     margin-top: 10px;
-    text-align: center;
     background-color: #F7BE81;
     background: -webkit-radial-gradient(#FF8000, #F7BE81); /* For Safari 5.1 to 6.0 */
     background: -o-radial-gradient(#FF8000, #F7BE81); /* For Opera 11.1 to 12.0 */
@@ -32,4 +29,9 @@
     top:150px;
     left: 1100px;
     position: absolute;
+}
+.verticalCentre{
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
