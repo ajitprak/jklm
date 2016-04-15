@@ -5,37 +5,21 @@ define(['./module'],function(services){
     'use strict';
     services.service('HttpService',['$http','$q',function($http,$q){
         this.get = function(url,callback){
-            var request = $http({
-                url:url,
-                method:'GET'
-            });
+            var request = $http.get(url);
             return request;
         };
 
         this.post = function(url,params){
-            var request = $http({
-                url:url,
-                method:'POST',
-                params:params
-            });
+            var request = $http.post(url,params);
             return request;
         };
 
-        this.update = function(url,params){
-            var request = $http({
-                url:url,
-                method:'UPDATE',
-                params:params
-            });
-
+        this.put = function(url,params){
+            var request = $http.put(url,params);
             return request;
         };
-        this.delete = function(url,params){
-            var request = $http({
-                url:url,
-                method:'DELETE',
-                params:params
-            });
+        this.delete = function(url){
+            var request = $http.delete(url);
             return request;
         };
     }]);

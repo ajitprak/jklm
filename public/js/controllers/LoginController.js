@@ -9,12 +9,14 @@ define(['./module'],function(controllers){
             var userName = $scope.userName;
             var password = $scope.password;
             HttpService.post('/login',{userName:userName,password:password}).then(
-                function(data,status,headers,config){
-                    if(data != undefined && data != null){
+                function(response){
+                    if(response.data != undefined && response.data != null){
                         $location.path('/home');
                     }
-                }
-            ).error();
+                },function(response){
+                    console.log("Error Occured during Login "+response.data); //Change to pop up or toaster
+                    $location.path('/login');
+                });
         }
     }]);
 });
