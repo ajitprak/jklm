@@ -10,6 +10,14 @@ require(['./app'],function(app){
                     templateUrl : 'partial-home.html',
                     controller : 'HomeController'
                 }
+            },
+            {
+                name: 'login',
+                info :{
+                    url:'/login',
+                    templateUrl : 'partial-login.html',
+                    controller : 'LoginController'
+                }
             }
         ];
         for(var page in allPages){

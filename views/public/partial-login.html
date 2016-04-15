@@ -32,12 +32,12 @@
             <div class="row">
               <div class="col-lg-8 hidden-sm">&nbsp;123</div>
                 <div class="col-lg-4 col-sm-12 pull-right">
-                    <form action="/login" method="POST">
+                    <div>
                         <label class="title">Enter Your Credentials to sign-in</label><br/>
-                        <input class="form-control" type="text" name="username" placeholder="User Name" /><br/>
-                        <input class="form-control" type="password" name="password" placeholder="Password" /><br/>
-                        <input class="form-control btn-success" type="submit" name="LogIn" />
-                    </form><br/>
+                        <input class="form-control" type="text" name="username" placeholder="User Name" ng-model="userName"/><br/>
+                        <input class="form-control" type="password" name="password" placeholder="Password" ng-model="password"/><br/>
+                        <button class="form-control btn-success" ng-click="doLogin()">Log In</button>
+                    </div><br/>
                     <a href="/register" >Click to Register</a>
                     <a href="/forgotpassword" class="pull-right">Forgot Password</a>
                 </div>
