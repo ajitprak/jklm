@@ -13,6 +13,7 @@ var User = require('./server/Auth/User.js');
 
 //initializing dependencies for session
 app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
 //app.set('views',__dirname+'/views');
 app.use(express.static(path.join(__dirname,'/views/public')));
 app.use(express.static(path.join(__dirname,'/public')));
@@ -29,7 +30,7 @@ app.use(passport.session());
 
 //Tell passport how to verify out user
 
-passport.use(new passportLocal.Strategy(User.authenticate));
+passport.use(new passportLocal.Strategy(User.authenticate)); 
 
 //Tell passport how to serialize and deserialize user
 passport.serializeUser(User.serialize); 

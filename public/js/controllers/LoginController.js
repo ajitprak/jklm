@@ -8,7 +8,7 @@ define(['./module'],function(controllers){
         $scope.doLogin = function(){
             var userName = $scope.userName;
             var password = $scope.password;
-            HttpService.post('/login',{userName:userName,password:password}).then(
+            HttpService.post('/login',{"username":userName,"password":password}).then(
                 function(response){
                     if(response.data != undefined && response.data != null){
                         $location.path('/home');
