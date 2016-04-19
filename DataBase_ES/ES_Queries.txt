@@ -9,8 +9,11 @@ Create index_type user/userAllData
   "userAllData":{
     "properties":{
       "userName":{"type":"string"},
-      "password":{"type":"string"},
-      "fullName":{"type":"string","index":"analyzed"},
+      "password":{"type":"string","index":"not_analyzed"},
+      "fullName":{"type": "string",
+          "fields": {
+              "raw": {"type" : "string", "index" : "not_analyzed"}
+           },
       "eMail":{"type":"string"},
       "mobileNumber":{"type":"string"},
       "DOJ":{"type":"date"},
@@ -19,7 +22,7 @@ Create index_type user/userAllData
       "city":{"type":"string"},
       "state":{"type":"string"},
       "securityQuestion" : {"type":"integer"},
-      "answer":{"type":"string"},
+      "answer":{"type":"string","index":"no"},
       "currentOrder":{
         "properties":{
           "orderNum":{"type":"string"},
