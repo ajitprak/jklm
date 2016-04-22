@@ -1,10 +1,11 @@
 
 
 Create index user
-
+PUT /user
 
 Create index_type user/userAllData
 
+POST /user/userAllData/_mapping
 {
   "userAllData":{
     "properties":{
@@ -33,10 +34,12 @@ Create index_type user/userAllData
     }
   }
 }
+}
 
 
 Inserting data into user InsexType
 
+POST /user/userData
 {  
       "userName":"ajitprak",
       "password":"subhashini",
