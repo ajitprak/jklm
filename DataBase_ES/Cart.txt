@@ -1,0 +1,15 @@
+
+Adding cart index
+
+PUT /cart
+
+cart_details type mapping
+
+PUT /cart/cart_details/_mapping
+{
+    "properties":{
+      "item_id":{"type":"string"},
+      "user_id":{"type":"string"},
+      "date_added":{"type":"date"}
+    }
+}

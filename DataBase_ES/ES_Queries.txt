@@ -39,7 +39,7 @@ POST /user/userAllData/_mapping
 
 Inserting data into user InsexType
 
-POST /user/userData
+POST /user/userAllData
 {  
       "userName":"ajitprak",
       "password":"subhashini",
