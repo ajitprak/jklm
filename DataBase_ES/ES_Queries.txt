@@ -14,7 +14,8 @@ POST /user/userAllData/_mapping
       "fullName":{"type": "string",
           "fields": {
               "raw": {"type" : "string", "index" : "not_analyzed"}
-           },
+           }
+        },
       "eMail":{"type":"string"},
       "mobileNumber":{"type":"string"},
       "DOJ":{"type":"date"},
@@ -33,7 +34,6 @@ POST /user/userAllData/_mapping
       }
     }
   }
-}
 }
 
 
