@@ -82,3 +82,17 @@ Validating User Name and password
   }
 }
 
+
+Getting user Profile Details
+
+POST /user/userAllData/_search
+{
+    "_source":["userName","fullName","eMail","mobileNumber","DOB","address","city","state","currentOrder"],
+            "query":{
+                "filtered":{
+                    "filter":{
+                            "term":{"userName":"ajitprak"}
+                        }
+                }
+            }
+}

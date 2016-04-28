@@ -30,9 +30,9 @@ module.exports = function(app){
                     //console.log("API Path "+entityApi.apiPath);
                     app.post.apply(app,[entityApi.apiPath,commonHandler]);
                 }
-    //        else if(entityApi.operation == 'GET'){
-    //            app.get.apply(entityApi.apiPath,commonHandler);
-    //        }
+                else if(entityApi.operation == 'GET'){
+                    app.get.apply(app,[entityApi.apiPath,commonHandler]);
+                }
         });
     });
 };
