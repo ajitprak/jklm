@@ -3,16 +3,16 @@ var errorLog = require('../logHandle/errorLogHandle.js');
 
 var defaultApiManager = {};
 
-defaultApiManager.handler = function(queryObj,response){
+defaultApiManager.handler = function(queryObj,response,callback){
     var queryForLog = (typeof queryObj == 'object')?JSON.stringify(queryObj):queryObj;
     errorLog.debug("ES Query : "+queryForLog);
     var onSuccess = function(responseData){
-        response.send(responseData);
+        callback(responseData,response);
         errorLog.debug("Response from ES :"+responseData);
     };
     var onFailure = function(error){
         errorLog.error(error);
-        response.send(error);
+        callback(error,response);
     };
     var esPromise = iServiceES.executeQuery(queryObj);
     esPromise.then(onSuccess,onFailure);

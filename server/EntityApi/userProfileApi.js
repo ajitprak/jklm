@@ -25,5 +25,7 @@ queryDefinition.getUserProfile = {
 
 };
 
+//query
+
 
 module.exports = queryDefinition;
