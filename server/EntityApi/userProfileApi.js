@@ -25,7 +25,25 @@ queryDefinition.getUserProfile = {
 
 };
 
-//query
+queryDefinition.getCartDetails = {
+    'apiPath' : 'api/userCartDetails',
+    'operation' : 'GET',
+    'esOperation' : 'search',
+    'parameters' : {
+        'index' : 'cart',
+        'type' : 'cart_details',
+        'body' : {
+            '_source' : ['item_id','item_name','userName','date_added'],
+            'query' : {
+                'filtered':{
+                    'filter':{
+                        'term' : {'userName':'?'}
+                    }
+                }
+            }
+        }
+    }
+};
 
 
 module.exports = queryDefinition;
