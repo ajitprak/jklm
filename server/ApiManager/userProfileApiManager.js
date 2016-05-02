@@ -33,9 +33,10 @@ userProfileApiManager.handler = function(queryObj,params,req,res){
 };
 
 userProfileApiManager.responseHandler = function(data,res){
-  //var result = data;
-  //result.cartDetails = data[1];
-  responder.sendResponse(data,res);
+    var result = {};
+    result.cart = data.cart.hits.hits[0]._source;
+    result.userProfile = data.userProfile.hits.hits[0]._source;
+  responder.sendResponse(result,res);
 };
 
 module.exports = userProfileApiManager;
