@@ -37,7 +37,7 @@ POST /user/userAllData/_mapping
 }
 
 
-Inserting data into user InsexType
+Inserting data into user IndexType
 
 POST /user/userAllData
 {  
