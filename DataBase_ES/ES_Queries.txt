@@ -50,7 +50,7 @@ POST /user/userAllData
       "DOB":"1987-05-31T00:00:00",
       "address":"8,Main Road, Villukury, 629180",
       "city":"Nagercoil",
-      "state":"Tamil Nadu",
+      "state":"TN",
       "securityQuestion" : 1,
       "answer":"Ranger",
       "currentOrder":[
