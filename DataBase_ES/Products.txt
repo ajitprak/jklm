@@ -1,0 +1,13 @@
+PUT /products/items_inventory/_mapping
+{
+   "properties":{
+       "item_id":{"type":"string"},
+       "item_name":{"type":"string"},
+       "price":{"type":"integer"),
+       "size":{"type":"integer"},
+       "category":{"type":"string"},
+       "sub_category":{"type":"string"},
+       "type":{"type":"string"},
+       "picture":{"type":}
+   }
+}
