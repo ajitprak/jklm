@@ -8,6 +8,7 @@ var _ = require('lodash');
 var responder = require('../../Routes/responder.js');
 var async = require('async');
 var cartQuery = require('../EntityApi/userProfileApi.js').getCartDetails;
+var soldItemsQuery = require('../EntityApi/productApi.js').getSoldItemsForUser;
 
 var userProfileApiManager = {};
 
@@ -17,6 +18,8 @@ userProfileApiManager.handler = function(queryObj,params,req,res){
     //For fetching cart details
     var queryCart = _.cloneDeep(cartQuery);
     queryUtils.addParamsToQuery(queryCart,params);
+    //For fetching sold items history for user
+    var querySoldItems = _.cloneDeep(soldItemsQuery,params);
 
     async.parallel({
             userProfile:function(callback){
