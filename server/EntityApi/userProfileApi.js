@@ -8,15 +8,16 @@ queryDefinition.getUserProfile = {
     'apiPath':'/api/userProfile',
     'operation': 'GET',
     'esOperation' : 'search',
+    'queryName' : 'getUserProfile',
     parameters:{
         'index' : 'user',
-        'type' : 'userAllData',
+        'type' : 'user_all_data',
         'body' :{
-            _source:["userName","fullName","eMail","mobileNumber","DOB","address","city","state","currentOrder"],
+            _source:["user_name","full_name","email","mobile_number","dob","address","city","state","current_orders"],
             "query":{
                 "filtered":{
                     "filter": {
-                            "term":{"userName":"?"}
+                            "term":{"user_name":"?"}
                         }
                 }
             }
@@ -29,15 +30,16 @@ queryDefinition.getCartDetails = {
     'apiPath' : 'api/userCartDetails',
     'operation' : 'GET',
     'esOperation' : 'search',
+    'queryName' : 'getCartDetails',
     'parameters' : {
         'index' : 'cart',
         'type' : 'cart_details',
         'body' : {
-            '_source' : ['item_id','item_name','userName','date_added'],
+            '_source' : ['item_id','item_name','user_name','date_added'],
             'query' : {
                 'filtered':{
                     'filter':{
-                        'term' : {'userName':'?'}
+                        'term' : {'user_name':'?'}
                     }
                 }
             }

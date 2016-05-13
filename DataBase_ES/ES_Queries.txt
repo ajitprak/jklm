@@ -5,76 +5,75 @@ PUT /user
 
 Create index_type user/userAllData
 
-POST /user/userAllData/_mapping
+PUT user/user_all_data/_mapping 
 {
-  "userAllData":{
     "properties":{
-      "userName":{"type":"string"},
-      "password":{"type":"string","index":"not_analyzed"},
+      "user_name":{"type":"string"},
+      "password":{"type":"string"},
       "fullName":{"type": "string",
-          "fields": {
-              "raw": {"type" : "string", "index" : "not_analyzed"}
-           }
+        "fields": {
+          "raw": {"type" : "string", "index" : "not_analyzed"}
+         }
         },
-      "eMail":{"type":"string"},
-      "mobileNumber":{"type":"string"},
-      "DOJ":{"type":"date"},
-      "DOB":{"type":"date"},
+      "email":{"type":"string"},
+      "mobile_number":{"type":"string"},
+      "doj":{"type":"date"},
+      "dob":{"type":"date"},
       "address":{"type":"string"},
       "city":{"type":"string"},
       "state":{"type":"string"},
-      "securityQuestion" : {"type":"integer"},
-      "answer":{"type":"string","index":"no"},
-      "currentOrder":{
+      "security_question" : {"type":"integer"},
+      "answer":{"type":"string","index" : "not_analyzed"},
+      "current_orders":{
         "properties":{
-          "orderNum":{"type":"string"},
-          "orderDescription":{"type":"string"},
-          "orderDate":{"type":"date"}
-        }		
+          "order_id":{"type":"string"},
+          "order_description":{"type":"string"},
+          "order_date":{"type":"date"}
+        }    	
       }
     }
-  }
 }
 
 
 Inserting data into user IndexType
 
-POST /user/userAllData
+POST /user/user_all_data/
 {  
-      "userName":"ajitprak",
+      "user_name":"ajiprak",
       "password":"subhashini",
-      "fullName":"Ajith Prakash T",
-      "eMail":"ajiprak@gmail.com",
-      "mobileNumber":"9008617577",
-      "DOJ":"2015-08-04T00:38:00",
-      "DOB":"1987-05-31T00:00:00",
+      "full_name":"Ajith Prakash T",
+      "email":"ajiprak@gmail.com",
+      "mobile_number":"9008617577",
+      "doj":"2015-08-04T00:38:00",
+      "dob":"1987-05-31T00:00:00",
       "address":"8,Main Road, Villukury, 629180",
       "city":"Nagercoil",
       "state":"TN",
-      "securityQuestion" : 1,
+      "security_question" : 1,
       "answer":"Ranger",
-      "currentOrder":[
+      "current_orders":[
            {
-              "orderNum":"ORD000001",
-              "orderDescription":"Moto G second Gen",
-              "orderDate":"2015-08-04T00:38:00"
-	    }
+              "order_id":"ORD000001",
+              "order_description":"Moto G second Gen",
+              "order_date":"2015-08-04T00:38:00"
+        }
         ]		
 }
 
 Validating User Name and password
 
-
+POST /user/user_all_data/_search
 {
-  "query":{
+    "_source":["user_name","full_name","email"],
+   "query":{
       "filtered":{
-      	"filter":{
+          "filter":{
         	"and":[
             	{
-                  "term":{"userName":"ajitprak"}
+                  "term":{"user_name":"ajiprak"}
                 },
                 {
-                  "term":{"password":"shalini"}
+                  "term":{"password":"subhashini"}
                 }
             ]
         }
@@ -85,13 +84,13 @@ Validating User Name and password
 
 Getting user Profile Details
 
-POST /user/userAllData/_search
+POST /user/user_all_data/_search
 {
-    "_source":["userName","fullName","eMail","mobileNumber","DOB","address","city","state","currentOrder"],
+    "_source":["user_name","full_name","email","mobile_number","dob","address","city","state","current_order"],
             "query":{
                 "filtered":{
                     "filter":{
-                            "term":{"userName":"ajitprak"}
+                            "term":{"user_name":"ajiprak"}
                         }
                 }
             }

@@ -4,17 +4,18 @@ queryDefinition.login = {
     'apiPath':'/api/loginuser',
     'operation': 'POST',
     'esOperation' : 'search',
+    'queryName' : 'login',
     parameters:{
         'index' : 'user',
-        'type' : 'userAllData',
+        'type' : 'user_all_data',
         'body' :{
-            _source:["userName","password","fullName"],
+            _source:["user_name","full_name"],
             "query":{
                 "filtered":{
                   "filter":{
                           "and":[
                           {
-                            "term":{"userName":"?"}
+                            "term":{"user_name":"?"}
                           },
                           {
                             "term":{"password":"?"}

@@ -26,11 +26,11 @@ Add Items to Inventory
 
 POST /products/items_inventory
 {
-       "item_id":"500000",
-       "item_name":"Moto G3 Phone",
+       "item_id":"500001",
+       "item_name":"Iphone",
        "date_added":"2016-04-27T20:38:00",
        "date_modified":"2016-05-12T15:38:00",
-       "modified_by":"ajiprak",
+       "modified_by":"subhav",
        "price":12999.99,
        "size":0,
        "category":"Electronics",
@@ -56,7 +56,7 @@ PUT /products/items_sold/_mapping
        "type":{"type":"string"},
        "date_sold":{"type":"date"},
        "date_modified":{"type":"date"},
-       "user_id":{"type":"string"},
+       "user_name":{"type":"string"},
        "image_location":{"type":"string"},
        "order_id":{"type":"string"},
        "city":{"type":"string"},
@@ -70,8 +70,8 @@ Adding data into items_sold
 
 POST /products/items_sold/
 {
-       "item_id":"500001",
-       "item_name":"Azus Ultimate",
+       "item_id":"500002",
+       "item_name":"One plus",
        "price":7777.99,
        "size":0,
        "category":"Electronics",
@@ -79,7 +79,7 @@ POST /products/items_sold/
        "type":"Black",
        "date_sold":"2016-05-11T15:38:00",
        "date_modified":"2016-05-11T15:38:00",
-       "user_id":"ajiprak",
+       "user_name":"ajiprak",
        "image_location":"/Electronics/Mobiles/White/",
        "order_id":"ORD000002",
        "city":"Nagercoil",
@@ -102,7 +102,7 @@ PUT /products/items_history/_mapping
        "type":{"type":"string"},
        "date_sold":{"type":"date"},
        "date_modified":{"type":"date"},
-       "user_id":{"type":"string"},
+       "user_name":{"type":"string"},
        "image_location":{"type":"string"},
        "order_id":{"type":"string"},
        "city":{"type":"string"},
@@ -116,8 +116,8 @@ Adding Items to history table
 
 POST /products/items_history/
 {
-       "item_id":"500002",
-       "item_name":"Iphone",
+       "item_id":"500003",
+       "item_name":"Micromax Carbon",
        "price":9999.99,
        "size":0,
        "category":"Electronics",
@@ -125,7 +125,7 @@ POST /products/items_history/
        "type":"Black",
        "date_sold":"2015-09-11T15:38:00",
        "date_modified":"2016-05-11T15:38:00",
-       "user_id":"ajiprak",
+       "user_name":"ajiprak",
        "image_location":"/Electronics/Mobiles/White/",
        "order_id":"ORD000003",
        "city":"Nagercoil",

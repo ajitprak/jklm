@@ -33,8 +33,10 @@ User.authenticate = function (username,password,done){
 
 User.serialize = function(user,done){
     var actualData = user.hits.hits[0]._source;
-    appConstants.users[actualData.userName] = actualData; //Remove after redis implementation
-    done(null,actualData.userName);
+    //actualData.userName = actualData.user_name;
+    //delete actualData.user_name;
+    appConstants.users[actualData.user_name] = actualData; //Remove after redis implementation
+    done(null,actualData.user_name);
 };
 
 User.deserialize = function(id,done){

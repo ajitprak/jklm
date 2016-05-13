@@ -7,12 +7,12 @@ defaultApiManager.handler = function(queryObj,response,callback){
     var queryForLog = (typeof queryObj == 'object')?JSON.stringify(queryObj):queryObj;
     errorLog.debug("ES Query : "+queryForLog);
     var onSuccess = function(responseData){
-        callback(null,responseData);
+        callback(null,responseData,response);
         errorLog.debug("Response from ES :"+responseData);
     };
     var onFailure = function(error){
         errorLog.error(error);
-        callback(null,error);
+        callback(null,error,response);
     };
     var esPromise = iServiceES.executeQuery(queryObj);
     esPromise.then(onSuccess,onFailure);

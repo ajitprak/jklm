@@ -10,7 +10,7 @@ PUT /cart/cart_details/_mapping
     "properties":{
       "item_id":{"type":"string"},
       "item_name":{"type":"string"},
-      "userName":{"type":"string"},
+      "user_name":{"type":"string"},
       "date_added":{"type":"date"}
     }
 }
@@ -20,8 +20,8 @@ Getting Items in Cart
 POST /cart/cart_details
 {
     "item_id":"500000",
-    "item_name":"Moto G3 Phone",
-    "userName":"ajitprak",
+    "item_name":"Azus Ultimate",
+    "userName":"ajiprak",
     "date_added":"2016-04-27T20:38:00"
 }
 
@@ -29,12 +29,12 @@ Getting cart items as per user
 
 POST /cart/cart_details/_search
 {
-    "_source":["item_id","item_name","user_id","date_added"],
-            "query":{
-                "filtered":{
-                    "filter":{
-                            "term":{"userName":"ajitprak"}
-                        }
-                }
+    "_source":["item_id","item_name","user_name","date_added"],
+    "query":{
+        "filtered":{
+            "filter": {
+                "term":{"user_name":"ajiprak"}
             }
+        }
+    }
 }
