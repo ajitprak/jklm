@@ -12,7 +12,7 @@ var cartApiManager = {};
 cartApiManager.handler = function(queryObj,params,req,res){
     var query = _.cloneDeep(queryObj);
     queryUtils.addParamsToQuery(query,params);
-    defaultApiManager.handler(query,response,this.responseHandler);
+    defaultApiManager.handler(query,res,this.responseHandler);
 };
 
 cartApiManager.responseHandler = function(err,data,res){

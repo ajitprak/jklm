@@ -10,8 +10,7 @@ var paramMap = {
 var queryName;
 
 queryUtil.addParamsToQuery = function(queryDefinition,params){
-    if(queryDefinition=="undefined" || params  == "undefined" || _.isEmpty(params))
-    {return;}
+    if(queryDefinition=="undefined" || params  == "undefined" || _.isEmpty(params)){return;}
     if(queryDefinition.queryName != undefined) {queryName = queryDefinition.queryName;}
     //walk through object literl.
     for ( key in queryDefinition) {
