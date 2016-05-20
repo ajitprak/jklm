@@ -11,7 +11,7 @@ var esClient = elasticsearch.Client({
     log: 'info'
 });
 
-fs.readFile('./indexNames.txt','utf8',function(err,data){
+fs.readFile('./Mappings/indexNames.txt','utf8',function(err,data){
     if(err)throw err;
     else {
         var indexArray = data.split("\n");
