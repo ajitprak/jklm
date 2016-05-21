@@ -21,7 +21,7 @@ POST /cart/cart_details
 {
     "item_id":"500000",
     "item_name":"Azus Ultimate",
-    "userName":"ajiprak",
+    "user_name":"ajiprak",
     "date_added":"2016-04-27T20:38:00"
 }
 
