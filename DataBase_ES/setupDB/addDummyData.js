@@ -3,12 +3,16 @@
  */
 
 var elasticsearch = require('elasticsearch');
+var fs = require('fs');
 var config = require('../../server/config.js');
 var _ = require('underscore');
 var data = {};
-data['user'] = require('./DummyData/userData.js');
-data['cart'] = require('./DummyData/cartData.js');
-data['products'] = require('./DummyData/productsData.js');
+
+var dataFiles = fs.readdirSync('./DummyData');
+_.forEach(dataFiles,function(fileName){
+    var indexName = fileName.substr(0,fileName.indexOf('.js'));
+    data[indexName] = require('./DummyData/'+fileName);
+});
 
 
 var esClient = elasticsearch.Client({

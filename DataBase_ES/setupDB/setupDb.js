@@ -5,10 +5,12 @@
 var fs = require('fs');
 var elasticsearch = require('elasticsearch');
 var config = require('../../server/config.js');
-var mapping = {}
+var mapping = {};
 mapping['user'] = require('./Mappings/userMappings.js');
 mapping['cart'] = require('./Mappings/cartMappings.js');
 mapping['products'] = require('./Mappings/productsMappings.js');
+
+var regEx = new RegExp('\r|\n');
 
 var esClient = elasticsearch.Client({
     host : config.elasticsearch.url,
@@ -20,7 +22,8 @@ fs.readFile('./Mappings/indexNames.txt','utf8',function(err,data){
     else {
         var indexArray = data.split("\n");
         for(i in indexArray){
-            start(indexArray[i]);
+            var indexName = indexArray[i].replace(regEx,'');
+            start(indexName);
         }
     }
 });
@@ -52,11 +55,13 @@ var createDocMapping = function(docMap){
 var start = function(indexName){
     createIndex(indexName).then(function(isCreated){
         if(isCreated.acknowledged) {
-            console.log(isCreated.acknowledged + " created the index " + indexName);
+            console.log("Created the index " + indexName +" "+ isCreated.acknowledged);
             createMapping(indexName);
         }
         else {
             console.log("Some error occured while creating index "+indexName);
         }
+    },function(error){
+        console.log("Error while creating index : "+indexName+" ."+error);
     });
 };
