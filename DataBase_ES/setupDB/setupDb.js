@@ -5,10 +5,8 @@
 var fs = require('fs');
 var elasticsearch = require('elasticsearch');
 var config = require('../../server/config.js');
+var _ = require('underscore');
 var mapping = {};
-mapping['user'] = require('./Mappings/userMappings.js');
-mapping['cart'] = require('./Mappings/cartMappings.js');
-mapping['products'] = require('./Mappings/productsMappings.js');
 
 var regEx = new RegExp('\r|\n');
 
@@ -17,7 +15,13 @@ var esClient = elasticsearch.Client({
     log : 'info'
 });
 
-fs.readFile('./Mappings/indexNames.txt','utf8',function(err,data){
+var mappingFiles = fs.readdirSync('./Mappings');
+_.forEach(mappingFiles,function(fileName){
+    var indexName = fileName.substr(0,fileName.indexOf('Map'));
+    mapping[indexName] = require('./Mappings/'+fileName);
+});
+
+fs.readFile('./indexNames.txt','utf8',function(err,data){
     if(err)throw err;
     else {
         var indexArray = data.split("\n");

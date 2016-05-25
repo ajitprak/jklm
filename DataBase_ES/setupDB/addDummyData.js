@@ -10,7 +10,8 @@ var data = {};
 
 var dataFiles = fs.readdirSync('./DummyData');
 _.forEach(dataFiles,function(fileName){
-    var indexName = fileName.substr(0,fileName.indexOf('.js'));
+    var indexName = fileName.substr(0,fileName.indexOf('Data'));
+    console.log("Index Name : "+ indexName);
     data[indexName] = require('./DummyData/'+fileName);
 });
 
