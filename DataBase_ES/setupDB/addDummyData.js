@@ -25,16 +25,21 @@ var addData = function(dataObj){
     return esClient.index(dataObj);
 };
 
+var addDataWrapper = function(dataObj){
+    console.log("Adding data for the type : " + dataObj.type);
+    addData(dataObj).then(function(res){
+            console.log("Data Added for the type : " + dataObj.type);
+        },
+        function(error){
+            console.log("Error occured while adding data for type : " + dataObj.type + " ,Error msg : " + error.message);
+        });
+};
+
 var start = function(){
     _.forEach(data,function(eachIndex){
         _.forEach(eachIndex,function(eachType){
             _.forEach(eachType,function(eachData){
-                addData(eachData).then(function(res){
-                        console.log("Data Added");
-                    },
-                    function(error){
-                        console.log("Error occured "+error.message);
-                    });
+                addDataWrapper(eachData);
             });
         });
     });

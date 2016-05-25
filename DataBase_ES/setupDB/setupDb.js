@@ -43,13 +43,18 @@ var createMapping = function(indexName) {
     docMaps = mapping[indexName];
     if (docMaps != undefined){
         for (doc in docMaps) {
-            createDocMapping(docMaps[doc]).then(function (isCreated) {
-                if (isCreated.acknowledged) {
-                    console.log("Created the mapping");
-                }
-            });
+            createDocMappingWrapper(docMaps[doc]);
         }
     }
+};
+
+var createDocMappingWrapper = function(docMap){
+    console.log("Creating the mapping for the type : " + docMap.type);
+    createDocMapping(docMaps[doc]).then(function (isCreated) {
+        if (isCreated.acknowledged) {
+            console.log("Created the mapping for the type : " + docMap.type);
+        }
+    });
 };
 
 var createDocMapping = function(docMap){
@@ -58,13 +63,8 @@ var createDocMapping = function(docMap){
 
 var start = function(indexName){
     createIndex(indexName).then(function(isCreated){
-        if(isCreated.acknowledged) {
             console.log("Created the index " + indexName +" "+ isCreated.acknowledged);
             createMapping(indexName);
-        }
-        else {
-            console.log("Some error occured while creating index "+indexName);
-        }
     },function(error){
         console.log("Error while creating index : "+indexName+" ."+error);
     });

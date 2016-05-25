@@ -27,6 +27,15 @@ function deleteIndex(indexName) {
     });
 };
 
+function deleteIndexWrapper(indexName){
+    console.log("Deleting Index " + indexName);
+    deleteIndex(indexName).then(function(res){
+        console.log("Index Deleted " + indexName);
+    },function(error){
+        console.log("Some Error occured : " + error.message);
+    });
+};
+
 function indexExists(indexName) {
     return esClient.indices.exists({
         index: indexName
@@ -36,12 +45,13 @@ function indexExists(indexName) {
 function start(indexName){
     indexExists(indexName).then(function(exists){
         if(exists){
-            console.log(indexName,exists);
-            return deleteIndex(indexName);
+            return deleteIndexWrapper(indexName);
         }
         else {
             console.log("The index "+indexName+" does not exist");
 
         }
-    })
+    },function(error){
+        console.log("Error occured " + error.message);
+    });
 };
