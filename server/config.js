@@ -12,6 +12,11 @@ config.port = 3000;
 config.elasticsearch = {};
 config.elasticsearch.url = "http://localhost:9200";
 
+//Redis config Info
+config.redis = {};
+config.redis.port = 6379;
+config.redis.host = "127.0.0.1";
+
 //Logging config
 config.logs = {};
 config.logs.errorLogs = {};
