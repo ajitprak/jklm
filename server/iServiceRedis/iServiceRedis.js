@@ -7,3 +7,10 @@ rClient.on('connect',function(){
 	console.log("Connected to Redis");
 });
 
+var iServiceRedis = {};
+
+iServiceRedis.post = function(obj){
+
+};
+
+
