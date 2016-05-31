@@ -35,12 +35,19 @@ User.serialize = function(user,done){
     var actualData = user.hits.hits[0]._source;
     //actualData.userName = actualData.user_name;
     //delete actualData.user_name;
-    appConstants.users[actualData.user_name] = actualData; //Remove after redis implementation
-    done(null,actualData.user_name);
+    
+    /*appConstants.users[actualData.user_name] = actualData; //Remove after redis implementation
+    /done(null,actualData.user_name);*/
+    
+    done(null,{
+    	name : actualData.user_name,
+    	fullName : actualData.full_name
+    });
 };
 
-User.deserialize = function(id,done){
-    done(null,appConstants.users[id]);//Remove after redis implementation
+User.deserialize = function(user,done){
+    //done(null,appConstants.users[user]);//Remove after redis implementation
+	done(null,user);
 };
 
 module.exports = User;

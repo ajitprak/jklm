@@ -16,6 +16,7 @@ config.elasticsearch.url = "http://localhost:9200";
 config.redis = {};
 config.redis.port = 6379;
 config.redis.host = "127.0.0.1";
+config.redis.sessionTimeout = 1800; // 30 mins
 
 //Logging config
 config.logs = {};

@@ -1,3 +1,4 @@
+//Session handling done using redis store, we can use this for any other crud operations in Redis
 var redis = require('redis');
 var config = require('../config.js');
 
