@@ -27,10 +27,10 @@ describe('Default APi Manager Test',function(){
             return promise;
         });
         var response = {};
-        response.send = function(){
-            expect(true).to.be.equal(true)
+        var callback = function(err,resData,res){
+            expect(true).to.be.equal(true);
         };
-        defaultApiManager.handler({mockKey:'mockVal'},response);
+        defaultApiManager.handler({mockKey:'mockVal'},response,callback);
        defaultApiManager._testOnlyOnSuccess("Data");
     });
     it("Check if onFailure method is called properly",function(){
@@ -40,10 +40,10 @@ describe('Default APi Manager Test',function(){
             return promise;
         });
         var response = {};
-        response.send = function(){
-            expect(true).to.be.equal(true)
+        var callback = function(err,resData,res){
+            expect(true).to.be.equal(true);
         };
-        defaultApiManager.handler({mockKey:'mockVal'},response);
+        defaultApiManager.handler({mockKey:'mockVal'},response,callback);
         defaultApiManager._testOnlyOnFailure("Data");
     });
     afterEach(function(){
