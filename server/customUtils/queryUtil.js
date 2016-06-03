@@ -1,12 +1,8 @@
 var appConstants = require('./appConstants.js');
 var _ = require('underscore');
+
 var queryUtil = {};
-var paramMap = {
-    'getUserProfile' : {'user_name' : 'userName'},
-    'getCartDetails' : {'user_name' : 'userName'},
-    'login' : {'user_name' : 'userName','password':'password'},
-    'getSoldItemsForUser': {'user_name' : 'userName'}
-};
+var paramMap = appConstants.paramMapDb;
 var queryName;
 
 queryUtil.addParamsToQuery = function(queryDefinition,params){
