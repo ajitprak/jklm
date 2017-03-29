@@ -1,0 +1,72 @@
+/* CSS */
+
+/*  product scroll loop */
+
+
+.offer-pg-cont{
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+}
+span.arrow-left,span.arrow-right{
+    display: block;
+    position: absolute;
+    background-color: #555;
+    top: 40px;
+    color:white;
+    z-index: 2;
+    cursor: pointer;
+}
+span.arrow-left {
+    font-size: 2em;
+    background: rgba(255, 165, 0, 0.56);
+    border-radius: 50px;
+    padding: 0.2em;
+    margin: 4em 0;
+	left: -2%; }
+
+
+span.arrow-right{
+    font-size: 2em;
+    background: rgba(255, 165, 0, 0.56);
+    border-radius: 50px;
+    padding: 0.2em;
+    margin: 4em 0;
+	left: 98.5%; 
+}
+span.arrow-left:hover,.offer-pg span.arrow-right:hover{
+    background-color: #333;
+}
+.offer-pg{
+    width: 3000px;
+}
+.item-wrapper.offer-con{
+    background-color: #333 !important;
+}
+.offer-con .left-item h4 {
+    color: #fff;
+    font-weight: normal;
+    margin: 0px;
+}
+.offer-con .right-item{
+    float: right;
+    padding: 10px;
+}
+.offer-con .right-item h5{
+    color: #cb9944;
+    margin: 0px;
+    font-size: 14px;
+}
+#hp-body .portfolio-item{
+	    padding: 1em;
+		text-align: center; }
+
+.offer-pg > .portfolio-item{
+	width: 275px;
+}
+
+.section-cont {
+    margin: 1.5em 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+    background: #FFF;
+}
