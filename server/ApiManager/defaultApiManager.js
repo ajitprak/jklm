@@ -7,7 +7,7 @@ defaultApiManager.handler = function(queryObj,response,callback){
     var queryForLog = (typeof queryObj == 'object')?JSON.stringify(queryObj):queryObj;
     errorLog.debug("ES Query : "+queryForLog);
     var onSuccess = function(responseData){
-        callback(null,responseData,response);
+        callback(null,responseData,response); // The first parameter(null being passed) is async parallel error catcher
         errorLog.debug("Response from ES :"+responseData);
     };
     var onFailure = function(error){
