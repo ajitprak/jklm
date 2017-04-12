@@ -7,7 +7,8 @@ require.config({
     paths:{
         'domReady': '../lib/requirejs-domready/domReady',
         'angular':'../lib/angular',
-        'uiRouter':'../lib/angular-ui-router.min'
+        'uiRouter':'../lib/angular-ui-router.min',
+        'jQuery' : '../lib/js/jquery.min'
         //bootstrap:'lib/bootstrap.css'
     },
     shim: {

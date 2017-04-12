@@ -13,13 +13,13 @@
 
         <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
         <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+        <script src="js/jquery.min.js"></script>
+        <link rel="stylesheet" href="./css/patriot-style.css">
 
-        <!--link rel="stylesheet" href="css/patriot-style.css"-->
-        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script data-main="./js/main" src="./lib/require.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         
     </head>
     <body> <!--id="body-app"-->
@@ -62,9 +62,9 @@
                 <div class="form login-container">
                     <h2>Login to your account</h2>
                     <form>
-                        <input class="input-theme" type="text" placeholder="Username"/>
-                        <input class="input-theme" type="password" placeholder="Password"/>
-                        <button class="hvr-underline-from-center login-enter" >Login</button>
+                        <input class="input-theme" type="text" placeholder="Username" ng-model="userName"/>
+                        <input class="input-theme" type="password" placeholder="Password" ng-model="password"/>
+                        <button class="hvr-underline-from-center login-enter" ng-click="doLogin()">Login</button>
 
                         <div class="social-login-cont col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <a href="#" class="hvr-underline-from-center social-login login-facebook col-xs-12"><i class="fa fa-facebook" aria-hidden="true"></i>Login with Facebook</a>

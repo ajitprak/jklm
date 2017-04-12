@@ -18,7 +18,7 @@ window.onclick = function(e) {
 
 
 
-$(document).ready(function(){
+/*$(document).ready(function(){
 
     var log = function(a){
         $(".info").html( $(".info").html() + "<br/>" + a );
@@ -41,13 +41,13 @@ $(document).ready(function(){
 
     $(".clickme").click(toggleClick);
    
-});
+});*/
 
 
 
 
 
-jQuery(document).ready(function (e) {
+/*jQuery(document).ready(function (e) {
     function t(t) {
         e(t).bind("click", function (t) {
             t.preventDefault();
@@ -70,4 +70,4 @@ jQuery(document).ready(function (e) {
         var n = e(t.target);
         if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
     })
-});
+});*/

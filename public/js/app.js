@@ -5,6 +5,7 @@
 define([
     'angular',
     'uiRouter',
+    'jQuery',
     'controllers/index',
     'services/index'
     ],function(ng){

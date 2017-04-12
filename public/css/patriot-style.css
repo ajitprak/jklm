@@ -1,0 +1,1535 @@
+/* line 4, H:/Patriot/design_pat/sass/theme.scss */
+h1, h2, h3, h4, p, span {
+  font-family: roboto,arial,sans-serif !important;
+}
+
+/* line 15, H:/Patriot/design_pat/sass/theme.scss */
+body {
+  background-color: #f5f5f5;
+}
+
+/* line 19, H:/Patriot/design_pat/sass/theme.scss */
+a:hover {
+  cursor: pointer;
+}
+
+/* line 23, H:/Patriot/design_pat/sass/theme.scss */
+body a {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+
+/* line 31, H:/Patriot/design_pat/sass/theme.scss */
+.show {
+  display: block !important;
+}
+
+/* line 35, H:/Patriot/design_pat/sass/theme.scss */
+.center-align {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* line 39, H:/Patriot/design_pat/sass/theme.scss */
+.float-right {
+  float: right;
+}
+
+/* line 42, H:/Patriot/design_pat/sass/theme.scss */
+.txt-decor-none {
+  text-decoration: none;
+}
+
+/* line 46, H:/Patriot/design_pat/sass/theme.scss */
+.bg-orange {
+  background: #FF7F00 !important;
+}
+
+/* line 50, H:/Patriot/design_pat/sass/theme.scss */
+.glyphicon {
+  font-family: 'Glyphicons Halflings' !important;
+}
+
+/* line 53, H:/Patriot/design_pat/sass/theme.scss */
+#cg-container a:hover, #cg-container a:focus, #hp-body a:hover {
+  text-decoration: none !important;
+}
+
+/* line 57, H:/Patriot/design_pat/sass/theme.scss */
+a.share-fb:hover {
+  background: #3b5998;
+  color: #fff;
+}
+
+/* line 61, H:/Patriot/design_pat/sass/theme.scss */
+a.share-gplus:hover {
+  background: #d34836;
+  color: #fff;
+}
+
+/* line 68, H:/Patriot/design_pat/sass/theme.scss */
+.input-theme {
+  border: none;
+  border-bottom: 2px solid #e6e6e6;
+  font-size: 14px;
+}
+
+/* line 74, H:/Patriot/design_pat/sass/theme.scss */
+.input-theme:focus {
+  outline: 0 !important;
+  -webkit-appearance: none;
+  border-bottom-color: #0067ff;
+  transition: all cubic-bezier(0.74, -0.18, 1, 0.13);
+  transition-duration: 1s;
+}
+
+/* line 87, H:/Patriot/design_pat/sass/theme.scss */
+.theme-btn {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding-right: 30px;
+  padding-left: 70px;
+  position: relative;
+  background-color: #297fb8;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#ff123852,Positive=true)";
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#ff123852,Positive=true);
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=2,Color=#33000000,Positive=true)";
+  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=2,Color=#33000000,Positive=true);
+}
+
+/* line 113, H:/Patriot/design_pat/sass/theme.scss */
+.theme-btn span {
+  position: absolute;
+  left: 0;
+  width: 50px;
+  line-height: 50px;
+  top: 0;
+  background-color: #a56a00;
+  font-size: 20px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* line 131, H:/Patriot/design_pat/sass/theme.scss */
+.theme-btn:hover span, .theme-btn.active span {
+  background-color: #00661a;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* line 136, H:/Patriot/design_pat/sass/theme.scss */
+.theme-btn.orange {
+  background: #FF7F00;
+}
+
+/* line 143, H:/Patriot/design_pat/sass/theme.scss */
+.favour-btn {
+  position: absolute;
+  z-index: 100;
+  left: 90%;
+  top: 3%;
+}
+
+/* line 150, H:/Patriot/design_pat/sass/theme.scss */
+.heart-default {
+  color: grey;
+  font-size: 25px !important;
+  margin: 0 2%;
+  float: right;
+}
+
+/* line 157, H:/Patriot/design_pat/sass/theme.scss */
+.favour-icon-clicked {
+  color: #ff008b;
+}
+
+/* line 163, H:/Patriot/design_pat/sass/theme.scss */
+.cool-link {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  padding: 0 !important;
+}
+
+/* line 170, H:/Patriot/design_pat/sass/theme.scss */
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: orange;
+  transition: width .3s;
+}
+
+/* line 179, H:/Patriot/design_pat/sass/theme.scss */
+.cool-link:hover::after {
+  width: 100%;
+}
+
+/* line 187, H:/Patriot/design_pat/sass/theme.scss */
+.center-align > ul {
+  margin: 0 auto;
+}
+
+/* line 191, H:/Patriot/design_pat/sass/theme.scss */
+.hp-slider .item {
+  height: 400px !important;
+}
+
+/* line 195, H:/Patriot/design_pat/sass/theme.scss */
+.hp-slider > .carousel {
+  height: 400px;
+}
+
+/* line 199, H:/Patriot/design_pat/sass/theme.scss */
+.hp-slider img {
+  min-height: 400px;
+}
+
+/* line 207, H:/Patriot/design_pat/sass/theme.scss */
+.prod-hover {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  margin-bottom: 6%;
+}
+
+/* line 218, H:/Patriot/design_pat/sass/theme.scss */
+.prod-hover .prod-overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 2px solid #ffc800;
+  border-top: 2px solid #ffc800;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+/* line 234, H:/Patriot/design_pat/sass/theme.scss */
+.prod-hover:hover .prod-overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 242, H:/Patriot/design_pat/sass/theme.scss */
+.prod-hover img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+/* line 249, H:/Patriot/design_pat/sass/theme.scss */
+.prod-hover:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+/* line 255, H:/Patriot/design_pat/sass/theme.scss */
+.prod-hover h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+/* line 271, H:/Patriot/design_pat/sass/theme.scss */
+.prod-hover a, hover p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+/* line 282, H:/Patriot/design_pat/sass/theme.scss */
+.prod-hover:hover a, .prod-hover:hover p, .pro:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 3, H:/Patriot/design_pat/sass/homepage.scss */
+#sld-container {
+  padding: 0px;
+}
+
+/* line 9, H:/Patriot/design_pat/sass/homepage.scss */
+.center-align > ul {
+  margin: 0 auto;
+}
+
+/* line 13, H:/Patriot/design_pat/sass/homepage.scss */
+.hp-slider .item {
+  height: 400px !important;
+}
+
+/* line 17, H:/Patriot/design_pat/sass/homepage.scss */
+.hp-slider > .carousel {
+  height: 400px;
+}
+
+/* line 21, H:/Patriot/design_pat/sass/homepage.scss */
+.hp-slider img {
+  min-height: 400px;
+}
+
+/* line 26, H:/Patriot/design_pat/sass/homepage.scss */
+a.carousel-control {
+  background: rgba(255, 255, 255, 0.45) !important;
+  width: 2em !important;
+  height: 2em !important;
+  border-radius: 50px;
+  margin: 8em 1em;
+}
+
+/* line 34, H:/Patriot/design_pat/sass/homepage.scss */
+.carousel-control .glyphicon {
+  font-size: 1em !important;
+}
+
+/* line 42, H:/Patriot/design_pat/sass/homepage.scss */
+.pro-slide-arrow > .fa {
+  font-size: 3em;
+  position: absolute;
+  top: 3em;
+  color: #1ab98e;
+}
+
+/* line 48, H:/Patriot/design_pat/sass/homepage.scss */
+.pro-slide-arrow .fa-chevron-circle-left {
+  left: -2%;
+}
+
+/* line 52, H:/Patriot/design_pat/sass/homepage.scss */
+.pro-slide-arrow .fa-chevron-circle-right {
+  left: 98.5%;
+}
+
+/* line 59, H:/Patriot/design_pat/sass/homepage.scss */
+.item-sec {
+  background: #fff;
+}
+
+/* line 63, H:/Patriot/design_pat/sass/homepage.scss */
+.theme-clr {
+  color: orange;
+}
+
+/* line 67, H:/Patriot/design_pat/sass/homepage.scss */
+.portfolio-item {
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* line 72, H:/Patriot/design_pat/sass/homepage.scss */
+.section-cont {
+  margin: 1.5em 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background: #FFF;
+}
+
+/* line 78, H:/Patriot/design_pat/sass/homepage.scss */
+.portfolio-item:hover {
+  box-shadow: 0px 0px 15px -6px orange;
+}
+
+/* line 85, H:/Patriot/design_pat/sass/homepage.scss */
+.grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+
+/* line 94, H:/Patriot/design_pat/sass/homepage.scss */
+figure.effect-honey {
+  background: #4a3753;
+}
+
+/* line 98, H:/Patriot/design_pat/sass/homepage.scss */
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 112, H:/Patriot/design_pat/sass/homepage.scss */
+figure.effect-honey img {
+  opacity: 0.9;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+/* line 118, H:/Patriot/design_pat/sass/homepage.scss */
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+/* line 126, H:/Patriot/design_pat/sass/homepage.scss */
+.grid figure figcaption, .grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 134, H:/Patriot/design_pat/sass/homepage.scss */
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 143, H:/Patriot/design_pat/sass/homepage.scss */
+figure.effect-honey figcaption::before, figure.effect-honey h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+/* line 148, H:/Patriot/design_pat/sass/homepage.scss */
+figure.effect-honey figcaption::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+  content: '';
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
+}
+
+/* line 160, H:/Patriot/design_pat/sass/homepage.scss */
+.grid figure figcaption::before, .grid figure figcaption::after {
+  pointer-events: none;
+}
+
+/* line 164, H:/Patriot/design_pat/sass/homepage.scss */
+figure.effect-honey h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1em 1.5em;
+  width: 100%;
+  text-align: left;
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+}
+
+/* line 175, H:/Patriot/design_pat/sass/homepage.scss */
+.grid figure h2, .grid figure p {
+  margin: 0;
+}
+
+/* line 179, H:/Patriot/design_pat/sass/homepage.scss */
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+/* line 184, H:/Patriot/design_pat/sass/homepage.scss */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+/* line 192, H:/Patriot/design_pat/sass/homepage.scss */
+.grid figure figcaption, .grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 200, H:/Patriot/design_pat/sass/homepage.scss */
+.prod-hover {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  margin-bottom: 6%;
+}
+
+/* line 211, H:/Patriot/design_pat/sass/homepage.scss */
+.prod-hover .prod-overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 2px solid #ffc800;
+  border-top: 2px solid #ffc800;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+/* line 227, H:/Patriot/design_pat/sass/homepage.scss */
+.prod-hover h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+/* line 243, H:/Patriot/design_pat/sass/homepage.scss */
+.prod-overlay p {
+  font-family: 'comfortaa',serif;
+  font-size: 23px;
+  color: orange !important;
+}
+
+/* line 249, H:/Patriot/design_pat/sass/homepage.scss */
+.prod-overlay a {
+  text-decoration: none !important;
+}
+
+/* line 253, H:/Patriot/design_pat/sass/homepage.scss */
+.prod-hover a, hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+/* line 4, H:/Patriot/design_pat/sass/followup.scss */
+#cg-container {
+  text-align: center;
+  margin: 0% auto;
+  background: #00adff;
+}
+
+/* line 10, H:/Patriot/design_pat/sass/followup.scss */
+.section-cont a:hover {
+  color: white;
+}
+
+/* line 13, H:/Patriot/design_pat/sass/followup.scss */
+.preview-3 {
+  width: 31% !important;
+}
+
+/* line 17, H:/Patriot/design_pat/sass/followup.scss */
+.preview-2 {
+  width: 47.8% !important;
+}
+
+/* line 21, H:/Patriot/design_pat/sass/followup.scss */
+.cg-drop {
+  display: none;
+  position: absolute;
+  background: #fffef9;
+  width: 486px !important;
+  margin-top: 0px !important;
+  border-top-width: 0px !important;
+  padding: 1em 0 !important;
+}
+
+/* line 31, H:/Patriot/design_pat/sass/followup.scss */
+.subcg img {
+  width: 100%;
+}
+
+/* line 35, H:/Patriot/design_pat/sass/followup.scss */
+.subcg-bg-head {
+  padding: 0 5px !important;
+}
+
+/* line 39, H:/Patriot/design_pat/sass/followup.scss */
+.subcg-item {
+  padding: 0 !important;
+  margin: 5px;
+}
+
+/* line 44, H:/Patriot/design_pat/sass/followup.scss */
+.subcg-item img {
+  width: 100%;
+}
+
+/* line 48, H:/Patriot/design_pat/sass/followup.scss */
+.cg-link {
+  list-style-type: none;
+  padding: 0.8em;
+}
+
+/* line 53, H:/Patriot/design_pat/sass/followup.scss */
+.cg-link > a {
+  color: white;
+}
+
+/* line 57, H:/Patriot/design_pat/sass/followup.scss */
+.cg-link > a:focus {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 62, H:/Patriot/design_pat/sass/followup.scss */
+.cg-link > a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* category bar UI tweaks */
+/* line 71, H:/Patriot/design_pat/sass/followup.scss */
+.cool-link {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  padding: 0 !important;
+}
+
+/* line 78, H:/Patriot/design_pat/sass/followup.scss */
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: orange;
+  transition: width .3s;
+}
+
+/* line 87, H:/Patriot/design_pat/sass/followup.scss */
+.cool-link:hover::after {
+  width: 100%;
+}
+
+/* line 102, H:/Patriot/design_pat/sass/followup.scss */
+.full {
+  width: 100%;
+}
+
+/* line 105, H:/Patriot/design_pat/sass/followup.scss */
+.gap {
+  height: 30px;
+  width: 100%;
+  clear: both;
+  display: block;
+}
+
+/* line 111, H:/Patriot/design_pat/sass/followup.scss */
+.footer {
+  background: #EDEFF1;
+  height: auto;
+  padding-bottom: 30px;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #DDDDDD;
+}
+
+/* line 120, H:/Patriot/design_pat/sass/followup.scss */
+.footer p {
+  margin: 0;
+}
+
+/* line 123, H:/Patriot/design_pat/sass/followup.scss */
+.footer img {
+  max-width: 100%;
+}
+
+/* line 126, H:/Patriot/design_pat/sass/followup.scss */
+.footer h3 {
+  border-bottom: 1px solid #BAC1C8;
+  color: #54697E;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  padding: 40px 0 10px;
+  text-transform: uppercase;
+}
+
+/* line 135, H:/Patriot/design_pat/sass/followup.scss */
+.footer ul {
+  font-size: 13px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 15px;
+  color: #7F8C8D;
+}
+
+/* line 143, H:/Patriot/design_pat/sass/followup.scss */
+.footer ul li a {
+  padding: 0 0 5px 0;
+  display: block;
+}
+
+/* line 147, H:/Patriot/design_pat/sass/followup.scss */
+.footer a {
+  color: #78828D;
+}
+
+/* line 151, H:/Patriot/design_pat/sass/followup.scss */
+.bg-gray {
+  background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+  box-shadow: 0 1px 0 #B4B3B3;
+}
+
+/* line 155, H:/Patriot/design_pat/sass/followup.scss */
+.social li {
+  background: none repeat scroll 0 0 #B5B5B5;
+  border: 2px solid #B5B5B5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 36px;
+  transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+/* line 176, H:/Patriot/design_pat/sass/followup.scss */
+.social li:hover {
+  transform: scale(1.15) rotate(360deg);
+  -webkit-transform: scale(1.1) rotate(360deg);
+  -moz-transform: scale(1.1) rotate(360deg);
+  -ms-transform: scale(1.1) rotate(360deg);
+  -o-transform: scale(1.1) rotate(360deg);
+}
+
+/* line 183, H:/Patriot/design_pat/sass/followup.scss */
+.social li a {
+  color: #EDEFF1;
+}
+
+/* line 186, H:/Patriot/design_pat/sass/followup.scss */
+.social li:hover {
+  border: 2px solid #2c3e50;
+  background: #2c3e50;
+}
+
+/* line 190, H:/Patriot/design_pat/sass/followup.scss */
+.social li a i {
+  font-size: 16px;
+  margin: 0 0 0 5px;
+  color: #EDEFF1 !important;
+}
+
+/* line 195, H:/Patriot/design_pat/sass/followup.scss */
+.footer-bottom {
+  background: #E3E3E3;
+  border-top: 1px solid #DDDDDD;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 201, H:/Patriot/design_pat/sass/followup.scss */
+.footer-bottom p.pull-left {
+  padding-top: 6px;
+}
+
+/* line 204, H:/Patriot/design_pat/sass/followup.scss */
+.payments {
+  font-size: 1.5em;
+}
+
+/* line 4, H:/Patriot/design_pat/sass/single-product.scss */
+.single .container {
+  background: #fff;
+  padding-top: 7em;
+}
+
+/* line 9, H:/Patriot/design_pat/sass/single-product.scss */
+.single .nav > li > a {
+  padding: 15px;
+}
+
+/* line 13, H:/Patriot/design_pat/sass/single-product.scss */
+.single a {
+  text-decoration: none  !important;
+}
+
+/* line 17, H:/Patriot/design_pat/sass/single-product.scss */
+.s-box {
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin: 0 .5em;
+  border: 2px solid #e8e8e8;
+  border-radius: 50px;
+}
+
+/* line 26, H:/Patriot/design_pat/sass/single-product.scss */
+.s-box:hover {
+  border: #fff;
+}
+
+/* line 29, H:/Patriot/design_pat/sass/single-product.scss */
+.selection-box-container {
+  margin: 2em 0;
+}
+
+/* line 33, H:/Patriot/design_pat/sass/single-product.scss */
+.selection-color {
+  display: inline-flex;
+}
+
+/* line 37, H:/Patriot/design_pat/sass/single-product.scss */
+.selection-size {
+  display: inline-flex;
+  margin-left: 3em;
+}
+
+/* line 42, H:/Patriot/design_pat/sass/single-product.scss */
+.selection-box-container h4 {
+  padding-right: .6em;
+  margin: auto;
+  color: #2f2f2f;
+}
+
+/* line 48, H:/Patriot/design_pat/sass/single-product.scss */
+.single-title-container {
+  padding: 0 0 1em 0 !important;
+}
+
+/* line 52, H:/Patriot/design_pat/sass/single-product.scss */
+.single-title-container h3 {
+  display: inline;
+}
+
+/* line 56, H:/Patriot/design_pat/sass/single-product.scss */
+a.share-icon {
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 .5em;
+  color: #777777;
+}
+
+/* line 65, H:/Patriot/design_pat/sass/single-product.scss */
+.share-container {
+  display: inline-flex;
+  float: right;
+}
+
+/* line 70, H:/Patriot/design_pat/sass/single-product.scss */
+.share-container .fa {
+  font-size: 1.2em;
+  position: relative;
+  top: 11px;
+  left: 11px;
+}
+
+/* line 76, H:/Patriot/design_pat/sass/single-product.scss */
+.cart-buy {
+  padding: 0 !important;
+}
+
+/* line 80, H:/Patriot/design_pat/sass/single-product.scss */
+.cart-buy-btn {
+  width: 48% !important;
+  background: #FF7F00;
+  padding: 3% 0;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 2.3em 0.7em 0 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 96, H:/Patriot/design_pat/sass/single-product.scss */
+.cart-buy-btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 99, H:/Patriot/design_pat/sass/single-product.scss */
+.addtocart-btn {
+  background: #0070ff;
+}
+
+/* line 103, H:/Patriot/design_pat/sass/single-product.scss */
+.span_2_of_a1 h3 {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-family: 'Ubuntu-Bold';
+}
+
+/* line 109, H:/Patriot/design_pat/sass/single-product.scss */
+p.in-para {
+  color: #B3B3B3;
+  font-size: 0.9em;
+  line-height: 2em;
+  margin: 1em 0;
+  border-bottom: 1px solid #f0f0f0;
+  border-top: 3px double #f0f0f0;
+  padding: 1em 0;
+}
+
+/* line 118, H:/Patriot/design_pat/sass/single-product.scss */
+.price_single {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 1em;
+}
+
+/* line 122, H:/Patriot/design_pat/sass/single-product.scss */
+span.reducedfrom {
+  color: #ffa700;
+  font-size: 1.5em;
+  font-family: 'Ubuntu-Bold';
+  float: left;
+}
+
+/* line 128, H:/Patriot/design_pat/sass/single-product.scss */
+.price_single a {
+  color: #999;
+  font-size: 13px;
+  float: right;
+  margin-top: 0.7em;
+}
+
+/* line 134, H:/Patriot/design_pat/sass/single-product.scss */
+h4.quick {
+  color: #000;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-family: 'Ubuntu-Regular';
+  margin-top: 1em;
+}
+
+/* line 141, H:/Patriot/design_pat/sass/single-product.scss */
+p.quick_desc {
+  color: #B3B3B3;
+  font-size: 0.9em;
+  line-height: 2em;
+  margin: 1em 0 1em;
+}
+
+/* line 147, H:/Patriot/design_pat/sass/single-product.scss */
+span.actual {
+  color: #F67777;
+  font-size: 1em;
+  margin-right: 5%;
+}
+
+/* line 152, H:/Patriot/design_pat/sass/single-product.scss */
+.add-to {
+  float: right;
+  margin-top: 1.6em;
+}
+
+/* line 160, H:/Patriot/design_pat/sass/single-product.scss */
+.quantity {
+  margin: 1.5em 0;
+  float: left;
+  width: 100%;
+}
+
+/* line 165, H:/Patriot/design_pat/sass/single-product.scss */
+.quantity-select {
+  display: inline-block;
+}
+
+/* line 168, H:/Patriot/design_pat/sass/single-product.scss */
+.value-minus,
+.value-plus {
+  height: 40px;
+  line-height: 24px;
+  width: 40px;
+  margin-right: 3px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  border: 1px solid #b2b2b2;
+  vertical-align: bottom;
+}
+
+/* line 185, H:/Patriot/design_pat/sass/single-product.scss */
+.quantity-select .entry.value-minus:before,
+.quantity-select .entry.value-plus:before {
+  content: "";
+  width: 13px;
+  height: 2px;
+  background: #000;
+  left: 50%;
+  margin-left: -7px;
+  top: 50%;
+  margin-top: -0.5px;
+  position: absolute;
+}
+
+/* line 197, H:/Patriot/design_pat/sass/single-product.scss */
+.quantity-select .entry.value-plus:after {
+  content: "";
+  height: 13px;
+  width: 2px;
+  background: #000;
+  left: 50%;
+  margin-left: -1.4px;
+  top: 50%;
+  margin-top: -6.2px;
+  position: absolute;
+}
+
+/* line 208, H:/Patriot/design_pat/sass/single-product.scss */
+.value {
+  cursor: default;
+  width: 40px;
+  height: 40px;
+  padding: 8px 0px;
+  color: #A9A9A9;
+  line-height: 24px;
+  border: 1px solid #E5E5E5;
+  background-color: #E5E5E5;
+  text-align: center;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+/* line 221, H:/Patriot/design_pat/sass/single-product.scss */
+.quantity-select .entry.value-minus:hover,
+.quantity-select .entry.value-plus:hover {
+  background: #E5E5E5;
+}
+
+/* line 226, H:/Patriot/design_pat/sass/single-product.scss */
+.quantity-select .entry.value-minus {
+  margin-left: 0;
+}
+
+/* line 232, H:/Patriot/design_pat/sass/single-product.scss */
+.chk-avail-container {
+  padding: 1em 0 !important;
+  margin-bottom: 1.5em;
+}
+
+/* line 237, H:/Patriot/design_pat/sass/single-product.scss */
+.chk-avail {
+  padding: 1%;
+  margin-right: 1em;
+}
+
+/* line 243, H:/Patriot/design_pat/sass/single-product.scss */
+a.chk-avail-btn {
+  vertical-align: bottom;
+}
+
+/* line 248, H:/Patriot/design_pat/sass/single-product.scss */
+ul.product-qty {
+  padding: 0;
+  list-style: none;
+}
+
+/* line 252, H:/Patriot/design_pat/sass/single-product.scss */
+.product-qty span {
+  color: #000;
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Ubuntu-Regular';
+}
+
+/* line 260, H:/Patriot/design_pat/sass/single-product.scss */
+.product-qty select {
+  border: 1px solid #eee;
+  padding: 0.5em;
+  font-size: 1em;
+  outline: none;
+}
+
+/* line 266, H:/Patriot/design_pat/sass/single-product.scss */
+.product-qty option {
+  border: 1px solid #EEE;
+}
+
+/* line 269, H:/Patriot/design_pat/sass/single-product.scss */
+.wish-list {
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* line 274, H:/Patriot/design_pat/sass/single-product.scss */
+.wish-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* line 278, H:/Patriot/design_pat/sass/single-product.scss */
+.wish-list li {
+  display: inline-block;
+  margin-right: 45px;
+}
+
+/* line 283, H:/Patriot/design_pat/sass/single-product.scss */
+.wish-list li a {
+  color: #F67777;
+  font-size: 0.85em;
+  text-decoration: underline;
+}
+
+/* line 288, H:/Patriot/design_pat/sass/single-product.scss */
+.wish-list li a span {
+  padding-right: 10px;
+}
+
+/* line 291, H:/Patriot/design_pat/sass/single-product.scss */
+.wish-list li a:hover {
+  text-decoration: none;
+}
+
+/* line 294, H:/Patriot/design_pat/sass/single-product.scss */
+.quantity_box {
+  float: left;
+  margin-right: 3em;
+}
+
+/* line 298, H:/Patriot/design_pat/sass/single-product.scss */
+.size-top {
+  margin: 2em 0;
+}
+
+/* line 304, H:/Patriot/design_pat/sass/single-product.scss */
+.tab-head {
+  padding: 3em 0 0;
+}
+
+/* line 307, H:/Patriot/design_pat/sass/single-product.scss */
+.tabs li a {
+  padding: 1em;
+  font-size: 0.9em;
+  color: #B3B3B3;
+}
+
+/* line 312, H:/Patriot/design_pat/sass/single-product.scss */
+.tabs li a:hover, .tabs li.active a {
+  background: #ffde5f !important;
+  color: #fff;
+}
+
+/* line 316, H:/Patriot/design_pat/sass/single-product.scss */
+.tab-content {
+  padding-left: 0px;
+}
+
+/* line 319, H:/Patriot/design_pat/sass/single-product.scss */
+.facts p {
+  color: #B3B3B3;
+  font-size: 0.9em;
+  line-height: 2em;
+  padding: 0 0 1em;
+}
+
+/* line 325, H:/Patriot/design_pat/sass/single-product.scss */
+.facts ul li {
+  list-style: none;
+  color: #B3B3B3;
+  font-size: 0.9em;
+  padding: 0.3em 0;
+}
+
+/* line 331, H:/Patriot/design_pat/sass/single-product.scss */
+.facts ul li span {
+  padding-right: 0.5em;
+}
+
+/* line 334, H:/Patriot/design_pat/sass/single-product.scss */
+nav.nav-sidebar {
+  float: left;
+  width: 30%;
+}
+
+/* line 338, H:/Patriot/design_pat/sass/single-product.scss */
+.one {
+  float: right;
+  width: 70%;
+  border: 1px solid #EDEDED;
+  padding: 1em;
+}
+
+/* line 344, H:/Patriot/design_pat/sass/single-product.scss */
+.product-at {
+  padding-top: 0;
+}
+
+@media (min-width: 1200px) {
+  /* line 350, H:/Patriot/design_pat/sass/single-product.scss */
+  .single {
+    background: #f7f7f7;
+  }
+}
+
+/* line 359, H:/Patriot/design_pat/sass/single-product.scss */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 368, H:/Patriot/design_pat/sass/single-product.scss */
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.21);
+  height: 6px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+/* line 384, H:/Patriot/design_pat/sass/single-product.scss */
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+/* line 22, H:/Patriot/design_pat/sass/login.scss */
+body {
+  background: #e9e9e9;
+  color: #666666;
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 31, H:/Patriot/design_pat/sass/login.scss */
+.login-body {
+  background: #f2f2f2;
+}
+
+/* line 35, H:/Patriot/design_pat/sass/login.scss */
+.login-pg {
+  margin: 10em auto !important;
+}
+
+/* Pen Title */
+/* line 39, H:/Patriot/design_pat/sass/login.scss */
+.pen-title {
+  padding: 50px 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* line 43, H:/Patriot/design_pat/sass/login.scss */
+.pen-title h1 {
+  margin: 0 0 20px;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+/* line 48, H:/Patriot/design_pat/sass/login.scss */
+.pen-title span {
+  font-size: 12px;
+}
+
+/* line 50, H:/Patriot/design_pat/sass/login.scss */
+.pen-title span .fa {
+  color: #0070ff;
+}
+
+/* line 53, H:/Patriot/design_pat/sass/login.scss */
+.pen-title span a {
+  color: #0070ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* line 63, H:/Patriot/design_pat/sass/login.scss */
+.toggle-fa-icon {
+  display: inline-flex;
+  width: 60px;
+}
+
+/* line 68, H:/Patriot/design_pat/sass/login.scss */
+.toggle-fa-icon p {
+  margin-left: 6px;
+}
+
+/* line 74, H:/Patriot/design_pat/sass/login.scss */
+.social-login-cont {
+  padding: 0 !important;
+  margin-top: 1.5em;
+  background: #f2f2f2;
+  border-radius: 2px;
+}
+
+/* line 81, H:/Patriot/design_pat/sass/login.scss */
+.social-login {
+  padding: 1em;
+  text-align: center;
+}
+
+/* line 86, H:/Patriot/design_pat/sass/login.scss */
+.social-login:hover {
+  text-decoration: none !important;
+  color: grey;
+  background: white;
+}
+
+/* line 91, H:/Patriot/design_pat/sass/login.scss */
+.social-login .fa {
+  margin-right: 1em;
+}
+
+/* line 95, H:/Patriot/design_pat/sass/login.scss */
+.social-login:before, .login-enter:before {
+  height: 3px;
+}
+
+/* line 99, H:/Patriot/design_pat/sass/login.scss */
+.login-facebook:before {
+  background: #3b5998;
+}
+
+/* line 102, H:/Patriot/design_pat/sass/login.scss */
+.login-google:before {
+  background: #d34836;
+}
+
+/* line 105, H:/Patriot/design_pat/sass/login.scss */
+.login-facebook {
+  color: #3b5998;
+}
+
+/* line 108, H:/Patriot/design_pat/sass/login.scss */
+.login-google {
+  color: #d34836;
+}
+
+/* Form Module */
+/* line 113, H:/Patriot/design_pat/sass/login.scss */
+.login-container {
+  box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.1);
+  padding: 40px 3em 11em !important;
+}
+
+/* line 118, H:/Patriot/design_pat/sass/login.scss */
+.form-module {
+  position: relative;
+  background: #ffffff;
+  max-width: 320px;
+  width: 100%;
+  border-top: 5px solid #0070ff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+/* line 126, H:/Patriot/design_pat/sass/login.scss */
+.form-module .toggle {
+  cursor: pointer;
+  position: absolute;
+  top: -0;
+  right: -0;
+  background: #0070ff;
+  width: 80px;
+  height: 30px;
+  margin: -5px 0 0;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* line 139, H:/Patriot/design_pat/sass/login.scss */
+.form-module .toggle .tooltip {
+  position: absolute;
+  top: 5px;
+  right: -65px;
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+  width: auto;
+  padding: 5px;
+  font-size: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* line 150, H:/Patriot/design_pat/sass/login.scss */
+.form-module .toggle .tooltip:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  display: block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid rgba(0, 0, 0, 0.6);
+}
+
+/* line 162, H:/Patriot/design_pat/sass/login.scss */
+.form-module .form {
+  display: none;
+  padding: 40px;
+}
+
+/* line 165, H:/Patriot/design_pat/sass/login.scss */
+.form-module .form:nth-child(2) {
+  display: block;
+}
+
+/* line 169, H:/Patriot/design_pat/sass/login.scss */
+.form-module h2 {
+  margin: 0 0 20px;
+  color: #0070ff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* line 176, H:/Patriot/design_pat/sass/login.scss */
+.form-module input {
+  outline: none;
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: .7em;
+  box-sizing: border-box;
+}
+
+/* line 185, H:/Patriot/design_pat/sass/login.scss */
+button {
+  cursor: pointer;
+  background: #0070ff;
+  width: 100%;
+  border: 0;
+  padding: 10px 15px;
+  color: #ffffff !important;
+}
+
+/* line 193, H:/Patriot/design_pat/sass/login.scss */
+button:hover {
+  color: #000000 !important;
+}
+
+/* line 197, H:/Patriot/design_pat/sass/login.scss */
+.cta {
+  background: #f2f2f2;
+  width: 100%;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  color: #666666;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* line 205, H:/Patriot/design_pat/sass/login.scss */
+.cta a {
+  color: #333333;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=../css/patriot-style.map */
